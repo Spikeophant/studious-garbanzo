@@ -1,7 +1,9 @@
 :root {
-    --dark: #333;
+    --lightGray: #3f4152;
     --purple: #bd93f9;
-    --light: #fff;
+    --light: #bbbbbb;
+    --darkGray: #282a36;
+    --pink: #ff87d7;
 }
 
 * {
@@ -9,11 +11,22 @@
     padding: 0;
 }
 
+html {
+    font-size: 15px;
+}
+
+@media (max-width: 900px) {
+    html {font-size: 13px;}
+}
+@media (max-width: 400px) {
+    html {font-size: 11px;}
+}
+
 body {
-    font-size: 22px;
+    font-size: 1.5rem;
     font-family: sans-serif;
     text-align: center;
-    background-color: var(--dark);
+    background-color: var(--darkGray);
     margin: 10px;
     color: var(--purple);
 }
@@ -21,14 +34,35 @@ body {
 header {
     text-align: center;
     color: var(--light);
-    padding: 40px;
+    padding: 4rem;
+    background-color: var(--lightGray);
+    position: relative;
 }
 
 header h1 {
-    font-size: 48px;
+    font-size: 3.8rem;
     color: var(--purple);
-    padding-bottom: 15px;
+    float:  left;
+    margin-left: -3rem;
 }
+
+header ul {
+    list-style: none;
+}
+header ul li {
+    display: inline;
+    float: right;
+    padding: 10px;
+}
+
+header ul li a:link, a:visited, a:hover, a:active { color: var(--light); }
+
+header ul li a:hover {
+    border-color: var(--pink);
+    box-shadow: 0 0 10px var(--pink);
+    border-radius: 7px;
+}
+
 
 main {
     padding-bottom: 15px;
@@ -45,7 +79,7 @@ article h4 {
     margin-top: -33px;
     outline: 1px solid var(--light);
     border-radius: 4px;
-    background-color: var(--dark);
+    background-color: var(--lightGray);
 }
 
 .row {
