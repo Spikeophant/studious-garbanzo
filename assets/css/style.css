@@ -1,0 +1,64 @@
+:root {
+    --dark: #333;
+    --purple: #bd93f9;
+    --light: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 22px;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: var(--dark);
+    margin: 10px;
+    color: var(--purple);
+}
+
+header {
+    text-align: center;
+    color: var(--light);
+    padding: 40px;
+}
+
+header h1 {
+    font-size: 48px;
+    color: var(--purple);
+    padding-bottom: 15px;
+}
+
+main {
+    padding-bottom: 15px;
+}
+
+article {
+    margin: 10px;
+    padding: 20px;
+    outline: dashed 2px var(--light);
+}
+
+article h4 {
+    position: relative;
+    margin-top: -33px;
+    outline: 1px solid var(--light);
+    border-radius: 4px;
+    background-color: var(--dark);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    justify-content: center;
+}
