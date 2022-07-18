@@ -82,7 +82,7 @@ article h2 {
 .row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     gap: 1rem;
 }
@@ -106,15 +106,35 @@ article h2 {
     overflow: hidden;
     margin-right: 1rem;
     border-radius: 2.5rem;
+    gap: 1rem;
+    position: relative;
 }
 
-.workItem a {
+.workItem a, a:visited, a:active {
     opacity: 0.2;
+    text-decoration: none;
+    color: var(--light);
 }
 
 .workItem a:hover {
     opacity: 0.4;
+}
+
+
+.contactLink a:link, a:visited, a:hover, a:active {
+    color: var(--light);
+    text-decoration: none;
+}
+
+.contactLink a:hover {
     border-color: var(--pink);
     box-shadow: 0 0 10px var(--pink);
     border-radius: 7px;
+}
+
+.contactLinkText {
+    position: absolute;
+    bottom: 1.2rem;
+    left: .2rem;
+    background: #fff;
 }
