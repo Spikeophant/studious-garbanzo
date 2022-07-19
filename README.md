@@ -7,7 +7,7 @@ Building a professional portfolio that will grow over time.
 
 ## Available At:
 
-Github url.
+https://spikeophant.github.io/studious-garbanzo/
 
 
 ## Credits
