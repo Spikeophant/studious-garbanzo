@@ -34,6 +34,17 @@ body {
     color: var(--light);
 }
 
+a:link, a:visited, a:hover, a:active {
+    color: var(--light);
+    text-decoration: none;
+}
+
+a:hover {
+    border-color: var(--pink);
+    box-shadow: 0 0 10px var(--pink);
+    border-radius: 7px;
+}
+
 header {
     text-align: center;
     color: var(--light);
@@ -58,15 +69,6 @@ header ul li {
     float: right;
     padding: 10px;
 }
-
-header ul li a:link, a:visited, a:hover, a:active { color: var(--light); }
-
-header ul li a:hover {
-    border-color: var(--pink);
-    box-shadow: 0 0 10px var(--pink);
-    border-radius: 7px;
-}
-
 
 main {
     padding-bottom: 15px;
@@ -115,18 +117,10 @@ article h2 {
 
 .workItem a, a:visited, a:active {
     opacity: 0.2;
-    text-decoration: none;
-    color: var(--light);
 }
 
 .workItem a:hover {
     opacity: 0.4;
-}
-
-
-.contactLink a:link, a:visited, a:hover, a:active {
-    color: var(--light);
-    text-decoration: none;
 }
 
 .contactLink a:hover {
